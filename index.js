@@ -16,7 +16,7 @@ const JSXELEMENT_CHILDREN = [
   'JSXFragment'
 ]
 
-const isJSXElementChildrenType = x => x && JSXELEMENT_CHILDREN.includes(x.type)
+const isJSXElementChildrenType = x => !!(x && JSXELEMENT_CHILDREN.includes(x.type))
 
 module.exports = {
   rules: {
@@ -25,7 +25,7 @@ module.exports = {
         return {
           JSXElement(node) {
             node.children.forEach((child, index, children) => {
-              if (child.type === 'Literal') {
+              if (child.type === 'JSXText') {
                 const prevChild = children[index - 1]
                 const nextChild = children[index + 1]
 
