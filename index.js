@@ -1,3 +1,13 @@
+/**
+ * @credits The too-few-lines-between-jsx-elements rule comes from this gist:
+ * https://gist.github.com/Sparragus/dc0348f23459b5e402df723397ce1f7f
+ *
+ * We published it in our plugin for ease of use.
+ * Special thanks to @Sparragus for writing this rule:
+ * https://gist.github.com/Sparragus
+ *
+ */
+
 const JSXELEMENT_CHILDREN = [
   'JSXText',
   'JSXExpressionContainer',
