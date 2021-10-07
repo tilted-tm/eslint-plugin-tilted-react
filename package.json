@@ -1,12 +1,20 @@
 {
   "name": "eslint-plugin-tilted-react",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "keywords": ["eslint", "react", "tilted", "tilted-tm"],
+  "author": "tech@tilted.fr",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tilted-tm/eslint-plugin-tilted-react.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tilted-tm/eslint-plugin-tilted-react/issues"
+  },
+  "homepage": "https://github.com/tilted-tm/eslint-plugin-tilted-react#readme",
+  "description": "react eslint rules used at tilted"
 }
