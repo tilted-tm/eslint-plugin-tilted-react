@@ -31,7 +31,7 @@ module.exports = {
 
                 const isBetweenJSXElements = [prevChild, nextChild].every(isJSXElementChildrenType)
                 if (isBetweenJSXElements) {
-                  const valueWithoutTabsAndSpaces = child.value.replace(/(\t| )/g, '')
+                  const valueWithoutTabsAndSpaces = child.value.replace(/([\t \r])/g, '')
                   const hasTooFewLinesBetween = /^\n{1}$/.test(valueWithoutTabsAndSpaces)
 
                   if (hasTooFewLinesBetween) {
