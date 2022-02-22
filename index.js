@@ -48,6 +48,15 @@ module.exports = {
             })
           }
         }
+      },
+      meta: {
+        docs: {
+          description: 'Check if there is a line between each child of a JSX element',
+          recommended: true,
+          url: "https://github.com/tilted-tm/eslint-plugin-tilted-react"
+        },
+        fixable: 'whitespace',
+        type: 'layout'
       }
     }
   }
